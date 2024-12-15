@@ -47,7 +47,7 @@ class ProductItem extends StatelessWidget {
   Future<Response> _deleteProduct(product, context) async {
     Uri uri = Uri.parse(
         'https://crud.teamrabbil.com/api/v1/DeleteProduct/${product.id}');
-    print(uri.toString());
+    //print(uri.toString());
     Response response = await get(
       uri,
       headers: {
